@@ -25,52 +25,53 @@ A clean and comprehensive visual diagram showing:
 
 ```
 
-java.lang
-└── Object (root of all classes)
+src/
+└── java/
+    ├── lang/
+    │   └── Object.java                      # Root superclass
+    │
+    └── util/
+        ├── interfaces/
+        │   ├── Iterable.java               # Java 1.5
+        │   ├── Collection.java             # Java 1.2
+        │   ├── List.java
+        │   ├── Set.java
+        │   ├── SortedSet.java
+        │   ├── NavigableSet.java
+        │   ├── Queue.java
+        │   ├── Deque.java
+        │   ├── Map.java
+        │   ├── SortedMap.java
+        │   ├── NavigableMap.java
+        │   ├── Iterator.java               # Java 1.2
+        │   ├── ListIterator.java           # Java 1.2
+        │   ├── Enumeration.java            # Legacy
+        │   ├── Comparable.java
+        │   └── Comparator.java
+        │
+        ├── classes/
+        │   ├── ArrayList.java
+        │   ├── LinkedList.java
+        │   ├── Vector.java
+        │   ├── Stack.java
+        │   ├── HashSet.java
+        │   ├── LinkedHashSet.java
+        │   ├── TreeSet.java
+        │   ├── PriorityQueue.java
+        │   ├── ArrayDeque.java
+        │   ├── HashMap.java
+        │   ├── LinkedHashMap.java
+        │   ├── TreeMap.java
+        │   ├── Hashtable.java
+        │   ├── Properties.java
+        │   ├── WeakHashMap.java
+        │   ├── IdentityHashMap.java
+        │   └── EnumMap.java
+        │
+        └── utils/
+            ├── Collections.java
+            ├── Arrays.java
+            └── Objects.java
 
-java.util
-├── Iterable<E>              // Java 1.5 — super interface for Collection
-│   └── Collection<E>        // Java 1.2
-│       ├── List<E>
-│       │   ├── ArrayList<E>
-│       │   ├── LinkedList<E>
-│       │   ├── Vector<E>
-│       │   │   └── Stack<E>
-│       ├── Set<E>
-│       │   ├── HashSet<E>
-│       │   ├── LinkedHashSet<E>
-│       │   └── SortedSet<E> / NavigableSet<E>
-│       │       └── TreeSet<E>
-│       └── Queue<E>
-│           ├── PriorityQueue<E>
-│           ├── ArrayDeque<E>
-│           └── Deque<E>
-│               ├── LinkedList<E>
-│               └── ArrayDeque<E>
-│
-├── Map<K,V>
-│   ├── HashMap<K,V>
-│   │   └── LinkedHashMap<K,V>
-│   ├── TreeMap<K,V>
-│   ├── Hashtable<K,V>
-│   │   └── Properties
-│   ├── WeakHashMap<K,V>
-│   ├── IdentityHashMap<K,V>
-│   └── EnumMap<K,V>
-│
-├── SortedMap<K,V> / NavigableMap<K,V>
-
-├── Comparator<T>            // For sorting
-├── Comparable<T>            // For natural order sorting
-│
-├── Cursors                  // Conceptual (not an actual package)
-│   ├── Enumeration<E>       // Java 1.0 — Legacy cursor
-│   ├── Iterator<E>          // Java 1.2 — Modern cursor from Iterable
-│   └── ListIterator<E>      // Java 1.2 — Enhanced Iterator for List
-
-├── Utility Classes
-│   ├── Collections
-│   ├── Arrays
-│   └── Objects
 
 ```
