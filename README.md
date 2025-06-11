@@ -23,7 +23,8 @@ A clean and comprehensive visual diagram showing:
 ## 📁 Folder Structure
 
 
-``
+```
+
 java.lang
 └── Object (root of all classes)
 
@@ -72,5 +73,4 @@ java.util
 │   ├── Arrays
 │   └── Objects
 
-
-``
+```
